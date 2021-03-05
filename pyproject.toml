@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "apitest-python"
+version = "0.1.0"
+description = "api-test"
+authors = ["zw"]
+license = "apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.25.1"
+pytest = "^6.2.2"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.7.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
