@@ -1,7 +1,6 @@
 sudo: false
 language: python
 python:
-  - 2.7
   - 3.6
   - 3.7
   - 3.8
@@ -13,9 +12,9 @@ matrix:
     - sudo: true
 install:
   - pip install poetry
-  - pipenv install -vvv
+  - poetry install -vvv
 script:
   - poetry run coverage report -m
   - poetry run coverage run --source=api_appear -m pytest -v
-after_success:
-  - pipenv run coveralls
+# after_success:
+#   - pipenv run coveralls
